@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+<body>
+    <form method="post">
+        <h1>My Form</h1>
+            <label for="Username">
+                Username:
+            </label>
+            <input type="text" name="Firstname" value = "<%=locals.firstname %>">
+        <div id = "container_email">
+            <label for="Email" >
+                Email:
+            </label>
+            <input type="email" name = "Email" class = 'email'>
+        </div>
+        <div id = 'container_pass'>
+            <label for="Password">
+                Password:
+            </label>
+            <input type="password" name="Password" class = 'pass'>
+        </div>
+
+        <div id = "btn">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</body>
+</html>
